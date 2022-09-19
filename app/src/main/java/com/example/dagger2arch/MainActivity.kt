@@ -12,8 +12,8 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-//    @Inject
-//    lateinit var presenter: MainPresenter
+    @Inject
+    lateinit var presenter: MainPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         Toast.makeText(this, this::class.java.toString(), Toast.LENGTH_SHORT).show()
 
-//        presenter.printUserDataX()
+        presenter.printUserDataX()
 
         Handler().postDelayed({
             startActivity(Intent(this, FeatureProfileActivity::class.java))

@@ -3,7 +3,7 @@ package com.example.dagger2arch.di
 import android.util.Log
 import com.example.dagger2arch.MainActivity
 import com.example.dagger2arch.MainApplication
-import com.example.dagger2arch.core.data.UserData
+import com.example.dagger2arch.core.data.data.UserData
 import com.example.dagger2arch.core.data.di.CoreDataComponent
 import dagger.Component
 import javax.inject.Singleton

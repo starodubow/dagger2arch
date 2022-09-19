@@ -3,8 +3,8 @@ package com.example.dagger2arch
 import android.app.Application
 import android.content.Context
 import android.util.Log
-import com.example.app_api.external.ApplicationContextComponentHolder
-import com.example.app_api.external.ApplicationContextDependencies
+import com.example.app_api.di.ApplicationContextComponentHolder
+import com.example.app_api.di.ApplicationContextDependencies
 import com.example.dagger2arch.di.AppComponent
 
 class MainApplication : Application() {

@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.dagger2arch.core.data.UserData
+import com.example.dagger2arch.core.data.data.UserData
 import com.example.dagger2arch.core.data.di.CoreDataComponent
 import com.example.dagger2arch.core.network.di.CoreNetworkComponent
 import com.example.dagger2arch.feature.profile.di.DaggerFeatureProfileComponent

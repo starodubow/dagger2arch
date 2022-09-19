@@ -1,4 +1,4 @@
-package com.example.dagger2arch.core.data
+package com.example.dagger2arch.core.data.data
 
 import android.content.Context
 import android.util.Log
@@ -15,6 +15,6 @@ data class UserData(val applicationContext: Context) {
     }
 
     fun printX() {
-//        Log.d("AppTag", "x = $x")
+        Log.d("AppTag", "x = $x")
     }
 }

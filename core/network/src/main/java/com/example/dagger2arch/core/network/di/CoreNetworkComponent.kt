@@ -2,8 +2,8 @@ package com.example.dagger2arch.core.network.di
 
 import android.content.Context
 import android.util.Log
-import com.example.app_api.external.ApplicationContextComponentHolder
-import com.example.dagger2arch.core.data.UserData
+import com.example.app_api.di.ApplicationContextComponentHolder
+import com.example.dagger2arch.core.data.data.UserData
 import com.example.dagger2arch.core.data.di.CoreDataComponent
 import dagger.Component
 import javax.inject.Singleton

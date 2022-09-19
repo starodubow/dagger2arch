@@ -1,7 +1,6 @@
-package com.example.app_api.external
+package com.example.app_api.di
 
 import android.util.Log
-import com.example.app_api.internal.ApplicationContextComponent
 
 object ApplicationContextComponentHolder {
     private var applicationContextComponent: ApplicationContextComponent? = null

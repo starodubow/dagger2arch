@@ -2,7 +2,7 @@ package com.example.dagger2arch.core.data.di
 
 import android.content.Context
 import android.util.Log
-import com.example.app_api.external.ApplicationContextComponentHolder
+import com.example.app_api.di.ApplicationContextComponentHolder
 import dagger.Component
 import javax.inject.Singleton
 

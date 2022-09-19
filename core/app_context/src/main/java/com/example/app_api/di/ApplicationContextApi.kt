@@ -1,4 +1,4 @@
-package com.example.app_api.external
+package com.example.app_api.di
 
 import android.content.Context
 

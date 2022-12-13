@@ -1,12 +1,13 @@
-package com.example.dagger2arch.feature.profile.di
+package com.example.dagger2arch.feature.profile.di.internal
 
 import com.example.dagger2arch.core.data.data.UserData
+import com.example.dagger2arch.feature.profile.FeatureProfilePresenter
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
 
 @Module
-class FeatureProfileModule {
+internal class FeatureProfileModule {
 
     @Provides
     fun provideFeatureProfilePresenter(

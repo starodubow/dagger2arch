@@ -28,8 +28,13 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
 
+    implementation project(':core:base_di')
     implementation project(':core:data')
     implementation project(':core:network')
 

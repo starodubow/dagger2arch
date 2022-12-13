@@ -28,9 +28,13 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
 
-    implementation project(':core:app_context')
+    implementation project(':core:base_di')
     implementation project(':core:data')
 
     implementation 'androidx.core:core-ktx:1.7.0'

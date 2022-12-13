@@ -1,4 +1,4 @@
-package com.example.dagger2arch.core.network.di
+package com.example.dagger2arch.core.network.di.internal
 
 import android.content.Context
 import com.example.dagger2arch.core.network.data.BaseApiRouter

@@ -32,7 +32,7 @@ android {
 
 dependencies {
 
-    implementation project(':core:app_context')
+    implementation project(':core:base_di')
     implementation project(':core:data')
     implementation project(':core:network')
     implementation project(':feature:profile')

@@ -6,7 +6,7 @@ import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.dagger2arch.di.AppComponent
+import com.example.dagger2arch.di.getAppComponent
 import com.example.dagger2arch.feature.profile.FeatureProfileActivity
 import javax.inject.Inject
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("AppTag", "MainActivity onCreate")
-        AppComponent.get().inject(this)
+        getAppComponent().inject(this)
 
         Toast.makeText(this, this::class.java.toString(), Toast.LENGTH_SHORT).show()
 

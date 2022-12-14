@@ -1,4 +1,4 @@
-package com.example.dagger2arch.core.data.di
+package com.example.dagger2arch.core.data.di.internal
 
 import android.content.Context
 import com.example.dagger2arch.core.data.data.UserData

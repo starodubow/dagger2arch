@@ -1,8 +1,8 @@
 package com.example.dagger2arch.core.data.di
 
 import android.content.Context
+import javax.inject.Inject
 
-interface CoreDataDependencies {
-
-    fun provideApplicationContext(): Context
-}
+class CoreDataDependencies @Inject constructor(
+    val applicationContext: Context
+)

@@ -20,6 +20,7 @@ class MainApplication : Application(),
 
     }
 
+
     companion object {
         lateinit var appContext: Context
             private set

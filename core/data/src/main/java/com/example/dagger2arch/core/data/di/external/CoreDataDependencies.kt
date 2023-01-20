@@ -1,4 +1,4 @@
-package com.example.dagger2arch.core.data.di
+package com.example.dagger2arch.core.data.di.external
 
 import android.content.Context
 

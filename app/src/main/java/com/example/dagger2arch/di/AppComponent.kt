@@ -3,17 +3,24 @@ package com.example.dagger2arch.di
 import android.util.Log
 import com.example.dagger2arch.MainActivity
 import com.example.dagger2arch.MainApplication
-import com.example.dagger2arch.core.data.data.UserData
+import com.example.dagger2arch.core.common.CoreDependenciesMapProvider
 import com.example.dagger2arch.core.data.di.CoreDataComponent
+import com.example.dagger2arch.core.data.di.external.CoreDataDependencies
+import com.example.dagger2arch.core.network.di.external.CoreNetworkDependencies
 import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
 @Component(
-    modules = [AppModule::class],
-    dependencies = [AppComponentDependencies::class]
+    modules = [
+        AppModule::class,
+        CoreDependenciesModule::class
+    ]
 )
-abstract class AppComponent {
+abstract class AppComponent :
+    CoreDependenciesMapProvider,
+    CoreNetworkDependencies,
+    CoreDataDependencies {
 
     companion object {
         private var appComponent: AppComponent? = null
@@ -25,12 +32,6 @@ abstract class AppComponent {
                     if (appComponent == null) {
                         appComponent = DaggerAppComponent
                             .builder()
-                            .dependencies(dependencies = object : AppComponentDependencies {
-                                override fun provideUserData(): UserData {
-                                    return CoreDataComponent.get().provideUserData()
-                                }
-
-                            })
                             .build()
                     }
                 }
@@ -50,8 +51,6 @@ abstract class AppComponent {
 
     @Component.Builder
     interface Builder {
-
-        fun dependencies(dependencies: AppComponentDependencies): Builder
 
         fun build(): AppComponent
 

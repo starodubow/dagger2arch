@@ -4,7 +4,7 @@ import com.example.dagger2arch.core.network.di.DaggerCoreNetworkComponent
 import com.example.dagger2arch.core.network.di.external.CoreNetworkApi
 import com.example.dagger2arch.core.network.di.external.CoreNetworkDependencies
 
-object NetworkApi {
+object CoreNetworkProvider {
 
     fun getCoreNetworkApi(dependencies: CoreNetworkDependencies): CoreNetworkApi =
         DaggerCoreNetworkComponent

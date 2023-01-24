@@ -10,10 +10,6 @@ data class UserData(val applicationContext: Context) {
         Random.nextInt(0,10000)
     }
 
-    init {
-        printX()
-    }
-
     fun printX() {
         Log.d("AppTag", "x = $x")
     }

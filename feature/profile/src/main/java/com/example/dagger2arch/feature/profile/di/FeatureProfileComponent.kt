@@ -1,11 +1,15 @@
 package com.example.dagger2arch.feature.profile.di
 
+import com.example.dagger2arch.core.common.CoreDependenciesMapProvider
 import com.example.dagger2arch.feature.profile.FeatureProfileActivity
 import dagger.Component
 
 @Component(
-    modules = [FeatureProfileModule::class],
-    dependencies = [FeatureProfileDependencies::class]
+    modules = [
+        FeatureProfileModule::class,
+        FeatureProfileDependenciesModule::class
+    ],
+    dependencies = [CoreDependenciesMapProvider::class]
 )
 interface FeatureProfileComponent {
 
@@ -13,6 +17,6 @@ interface FeatureProfileComponent {
 
     @Component.Factory
     interface Factory {
-        fun create(dependencies: FeatureProfileDependencies): FeatureProfileComponent
+        fun create(mapProvider: CoreDependenciesMapProvider): FeatureProfileComponent
     }
 }
